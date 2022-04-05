@@ -1,0 +1,56 @@
+---
+title: "MechaCarChallenge"
+output: html_document
+date: '2022-04-05'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Part 1
+
+
+```{r cars}
+library(dplyr)
+```
+
+### Reading csv
+
+```{r pressure, echo=FALSE}
+MechaCar <- read.csv('MechaCar_mpg.csv')
+```
+
+
+### Analysis
+```{r regg,summary}
+regg <- lm(mpg ~ AWD + ground_clearance + spoiler_angle +vehicle_weight + vehicle_length,data=MechaCar)
+summary(regg)
+```
+
+## Part 2
+```{r read csv,total summary}
+Sus_Coil <- read.csv('Suspension_Coil.csv')
+total_summary <- summarize(Sus_Coil, Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI), .groups = 'keep')
+lot_summary <- Sus_Coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI), .groups = 'keep')
+```
+
+## Test 
+```{r t_test one sample}
+t.test(Sus_Coil$PSI, mu=1500)
+
+```
+
+### Tests on lots
+```{r t.test on groups}
+lot_1 <- subset(Sus_Coil, Manufacturing_Lot == 'Lot1')
+lot_2 <- subset(Sus_Coil, Manufacturing_Lot == 'Lot2')
+lot_3 <- subset(Sus_Coil, Manufacturing_Lot == 'Lot3')
+
+t.test(lot_1$PSI,mu=1500)
+t.test(lot_2$PSI,mu=1500)
+t.test(lot_3$PSI,mu=1500)
+```
+
+
+
