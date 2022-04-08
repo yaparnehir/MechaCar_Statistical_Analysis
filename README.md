@@ -11,9 +11,9 @@
 >  * Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not? <br />
 > When we look up to the r-squared value %71 of it can be effectively used. Even it is a huge number, we are still far from a ideal prediction of MPG of MechaCar prototypes. However most likely we can predict correctly.
 ## Summary Statistics on Suspension Coils
-> In this part we are trying to find an answer to folling question and added image shows our resutls related to the purpose. <br />
+> In this part we are trying to find an answer to following question and added image shows our resutls related to the purpose. <br />
 >The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?<br />
-> ![picture2](/Resources/ss2.png)  ![picture3](/Resources/ss3.png) <br />
+> ![picture2](/Resources/ss2.png)  ![picture3](/Resources/ss3.png) <br /> <br />
 >Current manufacturing data satisfy the requirement of not exceeding 100Psi , however when we look up individually lot 3 does not meet design specifications.
 ## T-Tests on Suspension Coils
 >Test on the all manufacturing lots, p-value is greater than the significance level. According to the results we do not have enough evidence to reject null hypothesis. Mean of all lots also close enough the population mean. /n
