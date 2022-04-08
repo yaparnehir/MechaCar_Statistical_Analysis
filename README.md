@@ -17,7 +17,7 @@
 >Current manufacturing data satisfy the requirement of not exceeding 100Psi , however when we look up individually lot 3 does not meet design specifications.
 ## T-Tests on Suspension Coils
 >Test on the all manufacturing lots, p-value is greater than the significance level. According to the results we do not have enough evidence to reject null hypothesis. Mean of all lots also close enough the population mean. /n
-> Following image shows that individually and all lots test.
+> Following image shows that individually and all lots test. <br />
 ![Picture4](/Resources/ss4.png) <br />
 > Lot 1 and Lot 2 test results tell us their p-values are not low as 0.05% to reject the hypothesis. However for the lot 3 we can reject it since its p-value lower than the significance level. Lot 1 and lot 2 mean values are satisfy the population mean, however lot 3 is lower than the same level but we can say not so statistically different.
 ## Study Design: MechaCar vs Competition
